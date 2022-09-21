@@ -1,0 +1,32 @@
+﻿@model ProtocolViewModel
+<h1>Add new info</h1>
+<hr />
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Add info</h5>
+
+            </div>
+            <div class="card-body">
+                <form asp-controller="Protocol" asp-action="Create" method="post">
+                    <div>
+                        <label class="form-label">Name</label>
+                        <input asp-for="Name" type="text" class="form-control" />
+                    </div>
+                    <label class="form-label">Description</label>
+                    <input asp-for="Description" type="text" class="form-control" />
+                    <div class="m-3">
+                        <button type="submit" class="btn-primery">Save</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="card-footer">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
